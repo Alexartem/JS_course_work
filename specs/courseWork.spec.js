@@ -9,6 +9,11 @@ describe.only('Test', async function() {
                 return res;
             })
         let allRolls = await res.text.split("\n")
+        let scoreOfRolls = new Map()
+        scoreOfRolls[1] = 2;
         console.log("QQQQ", allRolls)
+        for (let i=0; i <=allRolls.length; i++){
+            console.log("Qqqqqq",allRolls[i])
+        }
     });
 });
